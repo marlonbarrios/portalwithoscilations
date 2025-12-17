@@ -20,13 +20,20 @@ function draw() {
 
   noFill();
   strokeCap(ROUND);
-  let size = width / steps;
+  
+  // Add padding so lines don't touch edges
+  let padding = 20;
+  let drawWidth = width - (padding * 2);
+  let drawHeight = height - (padding * 2);
+  let size = drawWidth / steps;
 
   for (let i = 0; i < steps; i++) {
     for (let j = 0; j < steps; j++) {
-      let x = i * size;
-      let y = j * size;
-      let d = dist(x, y, width / 2, height / 2);
+      let x = padding + i * size;
+      let y = padding + j * size;
+      let centerX = width / 2;
+      let centerY = height / 2;
+      let d = dist(x, y, centerX, centerY);
       let offsetX = map(d, 0, width, -PI, PI);
       let offsetY = map(d, 0, height, -PI, PI);
       strokeWeight(d * 0.01);
@@ -51,9 +58,11 @@ function draw() {
       translate(x + size * 0.5, y + size * 0.5);
       rotate(a);
       noFill();
-      line(-size, 0, size * 0.08, 1);
+      // Reduce line length to stay within bounds
+      let lineLength = size * 0.8;
+      line(-lineLength, 0, lineLength * 0.08, 1);
       rotate(b);
-      line(0, -size, 0, size * 0.08, 1);
+      line(0, -lineLength, 0, lineLength * 0.08);
       pop();
     }
   }
