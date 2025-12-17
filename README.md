@@ -38,6 +38,8 @@ npm install
 
 ### Development
 
+**Important**: This project uses canvas-sketch and must be run via npm, not by opening `index.html` directly.
+
 Start the development server with hot reload:
 ```bash
 npm start
@@ -48,7 +50,9 @@ Or use the dev command for hot reload:
 npm run dev
 ```
 
-The canvas-sketch server will automatically open in your browser.
+The canvas-sketch server will automatically open in your browser at `http://localhost:9966`.
+
+**Note**: Do not open `index.html` directly in the browser. Canvas-sketch uses Node.js modules (`require()`) which only work when run through the canvas-sketch CLI.
 
 ### Controls
 
