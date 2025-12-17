@@ -2,6 +2,8 @@
 
 A generative art piece featuring a grid of spinning lines coordinated by waves, generating a vortex effect in the center of the canvas. Built with [canvas-sketch](https://github.com/mattdesl/canvas-sketch).
 
+![Portal with Oscillations](1.png)
+
 ![Portal with Oscillations](https://img.shields.io/badge/canvas-512x512-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -70,6 +72,7 @@ portal01/
 ├── package.json       # Dependencies and scripts
 ├── index.html         # HTML file (for reference)
 ├── style.css          # CSS styling
+├── 1.png             # Example output image
 ├── libraries/         # p5.js libraries (if needed)
 └── README.md          # This file
 ```
