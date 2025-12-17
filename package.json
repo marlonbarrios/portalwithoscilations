@@ -1,7 +1,7 @@
 {
-  "name": "portal01-mondrian",
+  "name": "portal-with-oscillations",
   "version": "1.0.0",
-  "description": "Portal 01 - Grid of spinning lines coordinated by waves",
+  "description": "Portal with Oscillations - Grid of spinning lines coordinated by waves",
   "main": "sketch.js",
   "scripts": {
     "start": "canvas-sketch sketch.js --open",

@@ -1,13 +1,13 @@
-# Portal 01
+# Portal with Oscillations
 
 A generative art piece featuring a grid of spinning lines coordinated by waves, generating a vortex effect in the center of the canvas. Built with [canvas-sketch](https://github.com/mattdesl/canvas-sketch).
 
-![Portal 01](https://img.shields.io/badge/canvas-512x512-blue)
+![Portal with Oscillations](https://img.shields.io/badge/canvas-512x512-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 
-Portal 01 creates a mesmerizing visual effect using a grid of spinning lines that respond to wave patterns. The animation creates a vortex-like effect emanating from the center of the canvas, with lines rotating in a coordinated wave pattern.
+Portal with Oscillations creates a mesmerizing visual effect using a grid of spinning lines that respond to wave patterns. The animation creates a vortex-like effect emanating from the center of the canvas, with lines rotating in a coordinated wave pattern.
 
 ## Features
 

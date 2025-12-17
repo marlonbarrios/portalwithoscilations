@@ -64,7 +64,7 @@ const sketch = ({ context, width, height, frame }) => {
   canvas.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
   canvas.style.cursor = 'crosshair';
   
-  document.title = 'Portal 01';
+  document.title = 'Portal with Oscillations';
 
   return ({ context, width, height, frame }) => {
     // Background with alpha for trail effect
