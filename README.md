@@ -23,34 +23,38 @@ Portal with Oscillations creates a mesmerizing visual effect using a grid of spi
 
 ## Installation
 
+### GitHub Pages Deployment
+
+This project is ready to deploy on GitHub Pages:
+
+1. Go to your repository: https://github.com/marlonbarrios/portalwithoscilations
+2. Click **Settings** → **Pages**
+3. Under **Source**, select **main** branch
+4. Click **Save**
+5. Your site will be live at: `https://marlonbarrios.github.io/portalwithoscilations/`
+
+### Local Development
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/marlonbarrios/portalwithoscilations.git
 cd portalwithoscilations
 ```
 
-2. Install dependencies:
+2. Open `index.html` directly in your browser, or use a local server:
 ```bash
-npm install
+# Using Python
+python -m http.server 8000
+
+# Using Node.js http-server
+npx http-server
 ```
+
+Then open `http://localhost:8000` in your browser.
 
 ## Usage
 
-**Important**: This project uses canvas-sketch and must be run via npm, not by opening `index.html` directly.
-
-Start the development server:
-```bash
-npm start
-```
-
-Or use the dev command for hot reload:
-```bash
-npm run dev
-```
-
-The canvas-sketch server will automatically open in your browser at `http://localhost:9966`.
-
-**Note**: Do not open `index.html` directly in the browser. Canvas-sketch uses Node.js modules (`require()`) which only work when run through the canvas-sketch CLI.
+Simply open `index.html` in your web browser. The project uses p5.js which works directly in browsers and is compatible with GitHub Pages.
 
 ### Controls
 
@@ -64,7 +68,7 @@ The canvas-sketch server will automatically open in your browser at `http://loca
 - **Canvas Size**: 512x512 pixels
 - **Grid**: 25x25 cells (625 total spinning line pairs)
 - **Animation**: Continuous wave pattern with time-based speed modulation
-- **Framework**: canvas-sketch for generative art workflow
+- **Framework**: p5.js for browser-based generative art (GitHub Pages compatible)
 
 ## Project Structure
 
