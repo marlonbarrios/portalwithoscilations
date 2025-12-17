@@ -5,6 +5,7 @@ let speed = 4;
 function setup() {
   createCanvas(512, 512);
   mbsFramework();
+  document.title = 'Portal with Oscillations';
 }
 
 function windowResized() {
